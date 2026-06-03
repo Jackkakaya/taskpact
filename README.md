@@ -31,6 +31,13 @@ npx taskpact init
 
 这会把 taskpact 的技能文件铺进你的 AI 工具（如 `.claude/skills/`），并创建 `.spec/` 目录骨架。**它不扫描你的代码。**
 
+> 📦 **还没发布到 npm 时**，先从源码装一次全局命令：
+> ```bash
+> git clone https://github.com/Jackkakaya/taskpact.git
+> cd taskpact/cli && npm install && npm link
+> ```
+> 之后在任意项目里 `taskpact init` 即可；npm 发布后直接 `npx taskpact init`。
+
 **第 2 步 · 扫描项目、填配置（在你的 AI agent 里跑一次）**
 
 在 Claude Code 里输入：

@@ -45,11 +45,11 @@
   "author": "Jack <suminjackcode@gmail.com>",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/CHANGE-ME/taskpact.git"
+    "url": "git+https://github.com/Jackkakaya/taskpact.git"
   },
-  "homepage": "https://github.com/CHANGE-ME/taskpact#readme",
+  "homepage": "https://github.com/Jackkakaya/taskpact#readme",
   "bugs": {
-    "url": "https://github.com/CHANGE-ME/taskpact/issues"
+    "url": "https://github.com/Jackkakaya/taskpact/issues"
   },
   "publishConfig": {
     "access": "public"
