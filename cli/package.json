@@ -1,0 +1,68 @@
+{
+  "name": "taskpact",
+  "version": "0.1.0",
+  "description": "Contract-driven AI coding — let agents follow contracts, not vibes",
+  "type": "module",
+  "bin": {
+    "taskpact": "./bin/taskpact.js"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "bin"
+  ],
+  "scripts": {
+    "build:skills": "node scripts/embed-skills.mjs",
+    "build": "npm run build:skills && tsc",
+    "dev": "tsc --watch",
+    "typecheck": "tsc --noEmit",
+    "pretest": "npm run build",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "prepare": "npm run build",
+    "prepack": "node -e \"const fs=require('fs');for(const f of ['README.md','LICENSE'])fs.copyFileSync('../'+f,f)\""
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "keywords": [
+    "taskpact",
+    "spec",
+    "contract",
+    "spec-driven",
+    "bdd",
+    "ai",
+    "coding-agent",
+    "claude-code",
+    "cli"
+  ],
+  "license": "MIT",
+  "author": "Jack <suminjackcode@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CHANGE-ME/taskpact.git"
+  },
+  "homepage": "https://github.com/CHANGE-ME/taskpact#readme",
+  "bugs": {
+    "url": "https://github.com/CHANGE-ME/taskpact/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "@inquirer/prompts": "^7.8.0",
+    "chalk": "^5.5.0",
+    "commander": "^14.0.0",
+    "ora": "^8.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.7.0",
+    "vitest": "^3.0.0"
+  }
+}

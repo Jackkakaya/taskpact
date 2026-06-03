@@ -1,0 +1,20 @@
+# dependencies
+node_modules/
+
+# build output (rebuilt on publish via the `prepare` script)
+cli/dist/
+
+# README/LICENSE copied into cli/ at pack time by the `prepack` script
+cli/README.md
+cli/LICENSE
+
+# logs
+*.log
+npm-debug.log*
+
+# local agent settings
+.claude/settings.local.json
+
+# os / editor
+.DS_Store
+*.swp
