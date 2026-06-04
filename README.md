@@ -168,10 +168,6 @@ Augment · Aider · Zed · Lingma · CodeBuddy —— 用自然语言触发各�
 
 > 诚实边界：每个工具的格式按其官方文档生成、并有单测覆盖；但只有 **Claude Code** 经过真实会话里的端到端验证。"格式正确"不等于"我逐一在每个工具里跑过"——欢迎反馈纠错。对没有命令机制的工具（Augment/Aider/Zed 等），taskpact 注入方法论文件，你用自然语言触发各阶段（如「用 taskpact 流程把需求澄清成合约」）。`init` 不会覆盖你已有的根级规则文件（如 Zed 的 `.rules`）。
 
-## 致谢
-
-taskpact 的合约结构（Intent / Decisions / Boundaries / Completion Criteria）、显式测试绑定与四态验证，直接借鉴自 [**ZhangHanDong/agent-spec**](https://github.com/ZhangHanDong/agent-spec) 的 Task Contract 设计——一个 AI-native 的 BDD/spec 验证工具。taskpact 在其之上补齐了**需求澄清**与**零工具链（纯 Markdown + Skill）**两环，并把状态做成代码可校验。需求质询与不确定性标记的思路参考 GitHub Spec Kit，流式阶段与 brownfield 思路参考 OpenSpec。
-
 ## License
 
 [MIT](./LICENSE)
